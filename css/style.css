@@ -1,0 +1,446 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+html
+{
+	scroll-behavior: smooth;
+}
+body
+{
+	box-sizing: border-box;
+}
+/* Designer Scrollbar */
+body::-webkit-scrollbar
+{
+  width: 12px;
+}
+body::-webkit-scrollbar-track
+{
+  background-color: #212529;
+}
+body::-webkit-scrollbar-thumb
+{
+  background-color:#686c71;
+  border-radius: 5px;
+  cursor: pointer;
+ }
+ /* -----------navbar---------------- */
+
+.cursive-font
+{
+	font-family: 'Lobster', cursive;
+	font-size: 24px;
+}
+.heading2
+{
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+}
+.font15
+{
+	font-size: 15px;
+}
+
+ /* /---------------/ */
+ .navbar
+ {
+ 	z-index: 1;
+ }
+ .navbar-brand
+ {
+ 	font-size: 30px;
+ 	font-weight: bold;
+ 	color: white;
+ }
+.nav-link
+{
+	color: white;
+	font-size: 14px;
+}
+.nav-link:hover
+{
+	color: #fce38a !important;
+	border-bottom: 2px solid #fce38a;
+}
+
+.active
+{
+	color: #fce38a !important;
+	border-bottom: 2px solid #fce38a;
+	
+}
+
+/* --------Carousle CSS------------ */
+ .my-banner
+ {
+ 	padding-right: 0px !important;
+ 	padding-left: 0px !important;
+ 	height:44rem;
+ 	border: 1px solid black;
+ 	background: url('../img/banner.png') no-repeat;
+ 	background-size: cover;
+ 	background-position: center;
+ 	position: relative;
+ 	/* top: 0px !important;
+ 	left: 0px;
+ 	bottom: 0px;
+ 	right: 0px; */
+ 	z-index: 0;
+ 	/* padding: 30px 0px; */
+ }
+ .my-banner::before
+ {
+ 	content: "Creative Template";
+ 	top: 0px;
+ 	left: 0px;
+ 	bottom: 0px;
+ 	right: 0px;
+ 	position: absolute;
+ 	background-image: linear-gradient(90deg, rgba(243,129,129,0.8995973389355743) 0%, rgba(252,227,138,0.8995973389355743) 100%);
+	font-family: initial;
+	padding-top: 100px;
+	text-align: center;
+	font-size: 72px;
+	color: white;
+ }
+ #cont_main 
+ {
+ 	position: relative;
+ 	top: 200px;
+ 	/* background-color: red; */
+ 	padding: 10px 0px;
+ 	
+ 	
+ }
+ #cont_main .main_text
+ {
+ 	text-align: center;
+ 	font-size: 150px;
+ 	color: white;
+ 	font-family: initial;
+ 	width: 100%;
+ 	line-height: 125px;
+ }
+
+ @media screen and (max-width:992px )
+ {
+	.my-banner::before
+	{
+		font-size: 50px;
+	}
+	#cont_main
+	{
+		top: 160px;
+	}
+
+ 	#cont_main .main_text
+ 	{
+ 		font-size: 100px;
+ 		line-height: 70px;
+ 	}
+ 	#dropdown
+ 	{
+ 		background-color: rgba(0,0,0,0.9);
+ 	}
+ }
+ @media screen and (max-width:576px )
+ {
+ 	.my-banner::before
+	{
+		font-size: 35px;
+	}
+	/* #cont_main
+	{
+		top: 150px;
+	} */
+ 	#cont_main .main_text
+ 	{
+ 		font-size: 60px;
+ 		line-height: 50px;
+ 	}
+ }
+ .learn_btn
+ {
+ 	width: 150px;
+ 	border: 2px solid white !important;
+ 	color: white  !important;
+ 	font-weight: bold  !important;
+ }
+ 
+ #carousel_div
+ {
+	top: 240px;
+	position: relative;
+	z-index: 1;
+
+ }
+.heading_carousel
+{
+	border-top: 1px solid white;
+	cursor: pointer;
+	width: 100%;
+}
+.heading_carousel p
+{
+	text-align: left;
+	color: white;
+	font-size: small;
+
+}
+
+/* ----about-------- */
+
+.about_pic
+{
+	height: 250px;
+	cursor: pointer;
+	position: relative;
+}
+.about_pic img
+{
+	height: 100%;
+	width: 100%;
+
+}
+.about_pic:hover::before
+{
+	content:"\f007 \A SUPER TEAM";
+	white-space: pre;
+	font-family: FontAwesome;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+ 	background-image: linear-gradient(90deg, rgba(243,129,129,0.8095973389355743) 0%, rgba(252,227,138,0.8095973389355743) 100%);
+ 	color: white;
+ 	text-align: center;
+ 	font-weight: bold;
+ 	padding-top: 85px;
+ 	transition: all 1s ease-in;
+ 	font-size: x-large;
+}
+
+#counter_container
+{
+	background-color: #95e1d3;
+	padding: 20px 0px;
+	height: auto;
+}
+.count
+{
+	font-size: 72px;
+	font-weight: bold;
+	color:white;
+	position: relative;
+}
+
+/* ----device image section --------*/
+#device_img_section
+{
+	height: auto;
+	background: url('../img/feature_bg.png') no-repeat center;
+	position: relative;
+	/* border: 2px solid black; */
+	z-index: 0;
+	background-size: cover;
+	background-attachment: fixed;
+}
+#device_img_section::before
+{
+	content: "";
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(255,255,255,0.8);
+	position: absolute;
+	z-index: 1;
+}
+.device_container_heading
+{
+	width: 100%;
+	z-index: 2;
+	position: relative;
+	padding-top: 50px;
+	/* background-color: red; */
+}
+.device_container_img
+{
+	bottom: 0;
+	right: 0;
+	/* top: 62px; */
+	/* background-color:blue; */
+	position:relative;
+	z-index: 2;
+	height: 570px;
+	width: 100%;
+}
+.mob1_img
+{
+	background: url('../img/feature_mob1.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	height: 570px;
+	position: relative;
+	/* width: 100%; */
+	
+}
+.mob2_img
+{
+	background: url('../img/feature_mob2.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	height:430px;
+	/* bottom: -70px; */
+	/* left: 277px; */
+	/* width: 100%; */
+	position: relative;
+}
+/* --------AboutUs CSS-------- */
+ /* .my_about_section
+{
+	height: auto;
+	padding-right: 0px !important;
+ 	padding-left: 0px !important;
+}
+.side_img
+{
+	background-image: url('../img/img5.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	
+	height: auto;
+}
+@media screen and (max-width:770px)
+{
+	.side_img
+	{
+		height: 300px;
+		width: 100%;
+		display: block;
+	}
+} 
+.about_section
+{
+	height: auto;
+	background-color: #ffd460;
+	padding: 50px;
+	width: 100%;
+	color: white;
+	font-weight: 600;
+
+}
+ */
+/* -------Portfolio CSS---- */
+/* .gallery_img,.img_transition_div
+{
+	height: 200px;
+	cursor: pointer;
+	
+}
+
+.gallery_img:hover .img_transition_div
+{
+	transform:scale(0.9) !important;
+	transition: transform 0.5s ease-in !important;
+	box-shadow: 2px 2px 9px 3px #c7baba !important;
+
+}
+
+.gallery_img_a:hover::after
+{
+	content: "Hover Over Me!!!";
+	background-color:#007bff !important;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	opacity: 0.5;
+	color: white;
+	padding: 80px 0px;
+	font-size: xx-large;
+	text-align: center;
+	font-family: 'Crimson Text', serif !important;
+}
+
+.blue_bg
+{
+	background-color:#149ddd !important;
+	border-radius: 10px;
+}
+.white
+{
+	color: white !important;
+}
+ */
+
+/* ---------testimonials CSS--------- */
+/* #testimonials
+{
+	height: auto;
+	padding: 130px 0px;
+}
+.testimonials_li
+{
+	background-color: #17a2b8 !important;
+	width: 15px !important;
+    height: 15px !important;
+    margin-right: 10px !important;
+    margin-left: 10px !important;
+    border-radius: 50%;
+}
+
+.cursive-font
+{
+	font-family: cursive;
+}
+
+ */
+ /* -------ContactUs CSS --------*/
+.contact_form label
+{
+	font-weight: bold;
+}
+
+/* -------Copyright Footer CSS------ */
+/* .copyright_footer
+{
+	background-color: #222528;
+	padding: 20px 0px;
+}
+.social_icon:hover
+{
+	transform: rotate(360deg) !important;
+	transition: transform 1s ease-in;
+	color: cyan !important;
+}
+.back-to-top{
+
+ position: fixed;
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  right: 15px;
+  bottom: 15px;
+  background: #149ddd;
+  color: #fff;
+  transition: display 0.5s ease-in-out;
+  z-index: 99999;
+}
+.back-to-top i
+{
+	bottom: 10px;
+	left: 8px;
+	position: absolute;
+	font-size: 24px;
+}
+ */
