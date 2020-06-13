@@ -10,18 +10,18 @@ body
 {
 	box-sizing: border-box;
 }
-/* Designer Scrollbar */
+/* ----Designer Scrollbar--------- */
 body::-webkit-scrollbar
 {
   width: 12px;
 }
 body::-webkit-scrollbar-track
 {
-  background-color: #212529;
+  background-color:  #e0e3e5;
 }
 body::-webkit-scrollbar-thumb
 {
-  background-color:#686c71;
+  background-color:#95e1d3;
   border-radius: 5px;
   cursor: pointer;
  }
@@ -42,6 +42,10 @@ body::-webkit-scrollbar-thumb
 .font15
 {
 	font-size: 15px;
+}
+.sky_clr
+{
+	color: #95e1d3;
 }
 
  /* /---------------/ */
@@ -203,6 +207,8 @@ body::-webkit-scrollbar-thumb
 {
 	height: 100%;
 	width: 100%;
+	object-fit: cover;
+	object-position: center;
 
 }
 .about_pic:hover::before
@@ -302,6 +308,281 @@ body::-webkit-scrollbar-thumb
 	/* width: 100%; */
 	position: relative;
 }
+
+
+
+
+/* -----service section ------*/
+.service_img
+{
+	height: 350px;
+	background: url('../img/creativity.png') no-repeat center;
+	background-size: contain;
+
+}
+.service_accordian
+{
+	height: 350px;
+}
+.card-header h6
+{
+	cursor: pointer;
+}
+.service_body
+{
+	height: 185px;
+	
+}
+.service_body p
+{
+	height: 140px;
+	overflow-y: scroll;
+}
+.service_body p::-webkit-scrollbar
+{
+  width: 5px;
+}
+.service_body p::-webkit-scrollbar-track
+{
+  background-color: #e0e3e5;
+  border-radius: 5px;
+}
+.service_body p::-webkit-scrollbar-thumb
+{
+  background-color:#95e1d3;
+  border-radius: 5px;
+  cursor: pointer;
+ }
+ /* ------comment section----- */
+ #comment_scetion
+ {
+		
+	background-color: #f8f8f8;
+	padding: 20px 0px;
+	height: auto;
+}
+ 
+
+
+/* ------Team Section--------- */
+.team_img
+{
+	height: 395px;
+	position: relative;
+
+}
+.team_section img
+{
+	
+	height: 100%;
+	cursor: pointer;
+	object-fit: cover;
+}
+.team_img_hover_div
+{
+	/* border: 1px solid black; */
+ 	background-image: linear-gradient(90deg, rgba(243,129,129,0.8095973389355743) 0%, rgba(252,227,138,0.8095973389355743) 100%);
+	/* z-index: 1; */
+	height:395px;
+	top: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	padding-top: 175px;
+	text-align: center;
+	font-size: xx-large;
+	display: none;
+	cursor: pointer;
+
+}
+.bg-yellow
+{
+	background-color: #fce38a;
+	color: #f38181;
+	padding: 13px;
+	width: 58px;
+	height: 58px;
+}
+.border-pink
+{
+	border-right: 1px solid #f38181;
+}
+
+
+/* ----Brand logo sections -----*/
+#brand_logos_scetion
+ {
+		
+	background-color: #f8f8f8;
+	padding: 15px 0px;
+	height: 200px;
+	width: 100%;
+}
+.brands_logo_img
+{
+	background: url('../img/logos.png')  no-repeat center;
+	background-size: contain;
+
+	height:200px;
+	width: 100%;
+
+
+}
+
+/* ------work section----- */
+#work_section
+{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.work_pic
+{
+	height: 300px;
+	position: relative;
+	cursor: pointer;
+
+}
+.work_pic img
+{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+.work_pic:hover::before
+{
+
+	content:"\f03e  \A Creatively Designed";
+	white-space: pre;
+	font-family: FontAwesome;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+ 	background-image: linear-gradient(90deg, rgba(243,129,129,0.8095973389355743) 0%, rgba(252,227,138,0.8095973389355743) 100%);
+ 	color: white;
+ 	text-align: center;
+ 	padding-top: 110px;
+ 	transition: all 1s ease-in;
+ 	font-size: x-large;
+
+}
+
+
+/* -------client say section-------- */
+#client_say_section
+{
+	height: auto;
+	background: url('../img/client_bg.png') no-repeat center;
+	position: relative;
+	/* border: 2px solid black; */
+	z-index: 0;
+	background-size: cover;
+	background-attachment: fixed;
+	/* padding: 30px 0px; */
+}
+#client_say_section::before
+{
+	content: "";
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(255,255,255,0.8);
+	position: absolute;
+	z-index: 1;
+}
+.testimonials
+{
+	position: relative;
+	z-index: 2;
+}
+
+
+/* ----------blogs------------ */
+.blog_img
+{
+	height: 240px;
+	position: relative;
+}
+.blog_img img
+{
+	width: 100%;
+	height: 100%;
+	object-position: center;
+	object-fit: cover;
+}
+.blog_img::after
+{
+	content: "15 \A Jan";
+	white-space: pre;
+	height: 70px;
+	width: 60px;
+	background-color:#95e1d3;
+	position: absolute;
+	bottom: 12px;
+	left: -12px;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	padding-top:7px;
+}
+
+/* -----map------------ */
+#map
+{
+	padding-left: 0px;
+	padding-right: 0px;
+	height: 200px;
+	position: relative;
+}
+.map_area
+{
+	height: 100%;
+	background: url('../img/map.png') no-repeat center;
+	background-size: cover;
+
+}
+#map::after
+{	
+	content:"\f041 \A OPEN MAP";
+	white-space: pre;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(255,255,255,0.8);
+	position: absolute;
+	color: #f38181;
+	text-align: center;
+	font-weight: bold;
+	padding-top:50px;
+	font-size: xx-large;	
+}
+/* .team_img:hover::before
+{
+
+	content:"\f230  \f081  \f0d3  \f16d";
+	font-family: FontAwesome;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+ 	background-image: linear-gradient(90deg, rgba(243,129,129,0.8095973389355743) 0%, rgba(252,227,138,0.8095973389355743) 100%);
+ 	color: white;
+ 	text-align: center;
+ 	font-weight: bold;
+ 	padding-top: 175px;
+ 	transition: all 1s ease-in;
+ 	font-size: xxx-large;
+ 	z-index: 1;
+ 	cursor: pointer;
+} */
+
+
 /* --------AboutUs CSS-------- */
  /* .my_about_section
 {

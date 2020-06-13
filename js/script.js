@@ -46,6 +46,16 @@ $(".img_gallery_link").click(function(){
   });
 
 
+//-------team section hover effect-----
+  $('.team_img').hover(function() {
+    
+    var active =$(this).children('.team_img_hover_div').fadeIn('slow');
+    $('.team_img_hover_div').not(active).fadeOut('slow');
+
+  }, function() {
+      $('.team_img_hover_div').fadeOut('slow');
+});
+
 //AOS animation------------------------------------------------------
   AOS.init();
 
