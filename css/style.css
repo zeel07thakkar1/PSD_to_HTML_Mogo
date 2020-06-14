@@ -19,12 +19,21 @@ body::-webkit-scrollbar
 }
 body::-webkit-scrollbar-track
 {
+<<<<<<< HEAD
   background-color:  #95e1d3;
 }
 body::-webkit-scrollbar-thumb
 {
   background-color:#f38181;
   /* border-radius: 5px; */
+=======
+  background-color:  #e0e3e5;
+}
+body::-webkit-scrollbar-thumb
+{
+  background-color:#95e1d3;
+  border-radius: 5px;
+>>>>>>> 61b1138851aaf8935064ec5351fdb1613a3c290b
   cursor: pointer;
  }
 /* cursor-----------*/
@@ -79,10 +88,13 @@ body::-webkit-scrollbar-thumb
 {
 	color: #95e1d3;
 }
+<<<<<<< HEAD
 .pink_clr
 {
 	color: #f38181;
 }
+=======
+>>>>>>> 61b1138851aaf8935064ec5351fdb1613a3c290b
 
  /* /---------------/ */
  .navbar
@@ -606,6 +618,7 @@ body::-webkit-scrollbar-thumb
 	padding-top:50px;
 	font-size: xx-large;	
 }
+<<<<<<< HEAD
 
 /* ----footer----------- */
 .subscribe_btn
@@ -627,6 +640,8 @@ body::-webkit-scrollbar-thumb
 	object-fit: cover;
 	object-position: center;
 }
+=======
+>>>>>>> 61b1138851aaf8935064ec5351fdb1613a3c290b
 /* .team_img:hover::before
 {
 
