@@ -21,12 +21,15 @@
 	<link href="css/aos.css" rel="stylesheet">
 	<script type="text/javascript" src="js/aos.js"></script>
 </head>
-<body>
+<body class="box">
 
+<!----mousemove---->
+
+	 <div class="circle"></div>
 <!--------nav---->
 <nav class="navbar navbar-expand-lg fixed-top header_menu">
 	<div class="container">	
-  <a class="navbar-brand" href="#">MOGO</a>
+  <a class="navbar-brand" href="#">MoGo</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#dropdown">
     <i class="fa fa-chevron-circle-down text-white"></i>
   </button>
@@ -34,19 +37,19 @@
   <div class="collapse navbar-collapse" id="dropdown">
     <ul class="navbar-nav ml-auto text-center">
       <li class="nav-item">
-        <a class="nav-link active" href="#">ABOUT</a>
+        <a class="nav-link active" href="#about">ABOUT</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">SERVICE</a>
+        <a class="nav-link" href="#service">SERVICE</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">WORK</a>
+        <a class="nav-link" href="#work_section">WORK</a>
       </li>
        <li class="nav-item">
-        <a class="nav-link" href="#">COTACT</a>
+        <a class="nav-link" href="#footer">COTACT</a>
       </li>
        <li class="nav-item">
-        <a class="nav-link" href="#">BLOG</a>
+        <a class="nav-link" href="#blog">BLOG</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
@@ -60,6 +63,9 @@
 </div>
 </nav>
 <!--------------------->
+
+ 
+
 <!------banner---------->
 <div class="container-fluid my-banner text-center">
 	<div class="container" id="cont_main">
@@ -73,6 +79,8 @@
 
 <!-------------------->
 	<div class="container" id="carousel_div">
+
+
 
 		<div class="row">
 				<div class="col-lg-3 col-md-3 col-sm-3 col-3">
@@ -100,7 +108,7 @@
 	</div>
 </div>
 <!----------about section------------------>
-<div class="container pt-5 pb-5">
+<div class="container pt-5 pb-5" id="about">
 	<p class="text-center cursive-font">What we Do</p>
 	<p class="heading2">story about us</p>
 	<hr class="bg-danger w-25 m-auto">
@@ -111,19 +119,19 @@
 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 	<div class="row mt-5">
-		<div class="col-lg-4 col-md-4 col-sm-4 mb-2">
+		<div class="col-lg-4 col-md-4 col-sm-4 col-6 mb-2" data-aos="fade-right">
 				<div class="about_pic">
 					<img src="img/about1.png" alt="about1img">
 				</div>
 		</div>
-		<div class="col-lg-4 col-md-4 col-sm-4 mb-2">
+		<div class="col-lg-4 col-md-4 col-sm-4 col-6 mb-2" data-aos="fade-up">
 				<div class="about_pic">
 					<img src="img/about2.png" alt="about2img">
 				</div>
 		</div>
-		<div class="col-lg-4 col-md-4 col-sm-4 mb-2">
+		<div class="col-lg-4 col-md-4 col-sm-4 col-6 mb-2" data-aos="fade-left">
 				<div class="about_pic">
-					<img src="img/about3.png" alt="about3img">
+					<img src="img/about3.png" alt="about3img" >
 				</div>
 		</div>
 	</div>
@@ -166,13 +174,13 @@
 </div>
 
 <!----------work section------------------>
-<div class="container pt-5 pb-5">
+<div class="container pt-5 pb-5" id="service">
 	<p class="text-center cursive-font">We Work With</p>
 	<p class="heading2">AMAZING SERVICES</p>
 	<hr class="bg-danger w-25 m-auto">
 	
 <div class="row mt-5">	
-	<div class="col-lg-4 col-md-4 mb-3">
+	<div class="col-lg-4 col-md-4 mb-3" data-aos="zoom-in">
 		<div class="media">
 			<img src="img/s1.png" class="mr-3" alt="img">
 			<div class="media-body">
@@ -181,7 +189,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="col-lg-4 col-md-4 mb-3">
+	<div class="col-lg-4 col-md-4 mb-3" data-aos="zoom-in">
 		<div class="media">
 			<img src="img/s2.png" class="mr-3" alt="img">
 			<div class="media-body">
@@ -190,7 +198,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="col-lg-4 col-md-4 mb-3">
+	<div class="col-lg-4 col-md-4 mb-3" data-aos="zoom-in">
 		<div class="media">
 			<img src="img/s4.png" class="mr-3" alt="img">
 			<div class="media-body">
@@ -204,7 +212,7 @@
 <hr>
 
 <div class="row mt-5">	
-	<div class="col-lg-4 col-md-4 mb-3">
+	<div class="col-lg-4 col-md-4 mb-3" data-aos="zoom-in">
 		<div class="media">
 			<img src="img/s3.png" class="mr-3" alt="img">
 			<div class="media-body">
@@ -213,7 +221,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="col-lg-4 col-md-4 mb-3">
+	<div class="col-lg-4 col-md-4 mb-3" data-aos="zoom-in">
 		<div class="media">
 			<img src="img/s5.png" class="mr-3" alt="img">
 			<div class="media-body">
@@ -222,7 +230,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="col-lg-4 col-md-4 mb-3">
+	<div class="col-lg-4 col-md-4 mb-3" data-aos="zoom-in">
 		<div class="media">
 			<img src="img/s6.png" class="mr-3" alt="img">
 			<div class="media-body">
@@ -268,6 +276,520 @@
 </div>
 <!--------------------------------------------------->
 
+<!----------service section------------------>
+<div class="container pt-5 pb-5">
+	<p class="text-center cursive-font">Service</p>
+	<p class="heading2">WHAT WE DO</p>
+	<hr class="bg-danger w-25 m-auto">
+	<p class="text-center text-muted pt-4 small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur</p>
+	
+<div class="row mt-5">
+	<div class="col-lg-6 col-md-6 mb-3" data-aos="zoom-in-up">
+		<div class="service_img"></div>
+	</div>
+
+	<div class="col-lg-6 col-md-6 mb-3">
+		<div class="service_accordian">
+			<div class="accordion" id="service_acc">
+				<div class="card">
+					<div class="card-header" id="headingOne">
+						<h6 class="mb-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><img src="img/acc_img1.png"><span class="ml-3">PHOTOGRAPHY</span>
+						<i class="fa fa-plus float-right" aria-hidden="true"></i>
+						</h6>
+					</div>
+					<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#service_acc">
+						<div class="card-body service_body small text-muted font-italic">
+							<p class="p-2">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header" id="headingTwo">
+						<h6 class="mb-0" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"><img src="img/acc_img2.png"><span class="ml-3">CREATIVITY</span>
+						<i class="fa fa-plus float-right" aria-hidden="true"></i>
+						</h6>
+					</div>
+					<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#service_acc">
+						<div class="card-body service_body small text-muted font-italic">
+							<p class="p-2">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header" id="headingThree">
+						<h6 class="mb-0" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree"><img src="img/acc_img3.png"><span class="ml-3">WEB DESIGN</span>
+						<i class="fa fa-plus float-right" aria-hidden="true"></i>
+						</h6>
+					</div>
+					<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#service_acc">
+						<div class="card-body service_body small text-muted font-italic">
+							<p class="p-2">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+</div>
+
+<!----------comment section------------------>
+<div class="container-fluid" id="comment_scetion">
+	<div class="container text-center">
+		<div class="row">
+			<div class="offset-1"></div>
+			<div class="col-lg-10 col-md-10 col-sm-10 col-12">
+				<div class="media">
+					<img src="img/comment_img.png" class="mr-3" alt="cmt_img" style="height: 150px;width: 150px;">
+					
+						<blockquote class="blockquote">
+							<p class="mb-0 text-left small"><q>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate</q> </p>
+							<footer class="blockquote-footer text-left "><cite title="Source Title"><b class="text-dark">Jone Doe</b></cite></footer>
+						</blockquote>
+						
+						
+					
+				</div>
+			</div>
+			<div class="offset-1"></div>
+		</div>
+	</div>
+</div>
+
+<!-----team section----------------->
+<div class="container pt-5 pb-5" id="team">
+	<p class="text-center cursive-font">Who We are</p>
+	<p class="heading2">MEET OUR TEAM</p>
+	<hr class="bg-danger w-25 m-auto">
+	<p class="text-center text-muted pt-4 small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur</p>
+
+	<div class="row mt-5 no-gutters">
+		<div class="col-lg-4 col-md-4 col-sm-6 col-6" data-aos="flip-left">
+			<div class="team_section p-4">
+				<div class="card">
+					<div class="team_img">
+						<img src="img/team1.png" class="card-img-top" alt="team1">
+					
+						<div class="team_img_hover_div">
+							<div class="d-flex justify-content-center">
+								<i class="fa fa-facebook bg-yellow border-pink"></i>
+								<i class="fa fa-instagram bg-yellow border-pink"></i>
+								<i class="fa fa-pinterest bg-yellow border-pink"></i>
+								<i class="fa fa-twitter bg-yellow"></i>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="card-body">
+						<h6 class="card-title text-center">MATTHEW DIX</h6>
+						<p class="cursive-font small text-muted text-center">Graphics Designer</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-6 col-6"  data-aos="flip-left">
+			<div class="team_section p-4">
+				<div class="card">
+					<div class="team_img">
+						<img src="img/team2.png" class="card-img-top" alt="team2">
+					
+						<div class="team_img_hover_div">
+							<div class="d-flex justify-content-center">
+								<i class="fa fa-facebook bg-yellow border-pink"></i>
+								<i class="fa fa-instagram bg-yellow border-pink"></i>
+								<i class="fa fa-pinterest bg-yellow border-pink"></i>
+								<i class="fa fa-twitter bg-yellow"></i>
+							</div>
+						</div>
+
+					</div>
+					<div class="card-body">
+						<h6 class="card-title text-center  text-uppercase">Christopher Campbell</h6>
+						<p class="cursive-font small text-muted text-center">Branding UX Designer</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-6 col-6"  data-aos="flip-left">
+			<div class="team_section p-4">
+				<div class="card">
+					<div class="team_img">
+						<img src="img/team3.png" class="card-img-top" alt="team3">
+					
+						<div class="team_img_hover_div">
+							<div class="d-flex justify-content-center">
+								<i class="fa fa-facebook bg-yellow border-pink"></i>
+								<i class="fa fa-instagram bg-yellow border-pink"></i>
+								<i class="fa fa-pinterest bg-yellow border-pink"></i>
+								<i class="fa fa-twitter bg-yellow"></i>
+							</div>
+						</div>
+
+					</div>
+					<div class="card-body">
+						<h6 class="card-title text-center text-uppercase">Michael Fertig</h6>
+						<p class="cursive-font small text-muted text-center">Developer</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-----brands logo section-------------->
+
+<div class="container-fluid" id="brand_logos_scetion">
+	<div class="container">
+		<div class="brands_logo_img"></div>
+	</div>
+</div>
+
+<!------some of work section------------->
+<div class="container-fluid pt-5 pb-5" id="work_section">
+	<p class="text-center cursive-font">What We Do</p>
+	<p class="heading2">SOME OF OUR WORK</p>
+	<hr class="bg-danger w-25 m-auto">
+	<p class="text-center text-muted pt-4 small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur</p>
+
+	<div class="row no-gutters mt-5">
+		<div class="col-lg-6">
+			<div class="row no-gutters">
+				<div class="col-lg-6 col-md-6 col-sm-6 col-6">
+					<div class="work_pic">
+						<img src="img/w6.png" alt="work_pic1">
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6 col-6">
+					<div class="work_pic">
+						<img src="img/w5.png" alt="work_pic2">
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6 col-6">
+					<div class="work_pic">
+						<img src="img/w4.png" alt="work_pic4">
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6 col-6">
+					<div class="work_pic">
+						<img src="img/w7.png" alt="work_pic7">
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="col-lg-6">
+			<div class="row no-gutters">
+				<div class="col-lg-6 col-md-6 col-sm-6 col-6">
+					<div class="work_pic" style="height: 600px;">
+						<img src="img/w3.png" alt="work_pic3" style="height:100%;">
+					</div>
+				
+				</div>
+
+				<div class="col-lg-6 col-md-6 col-sm-6 col-6">
+					<div class="row no-gutters">
+						<div class="col-lg-12">
+							<div class="work_pic">
+								<img src="img/w2.png" alt="work_pic7">
+							</div>
+						</div>
+						<div class="col-lg-12">
+							<div class="work_pic">
+								<img src="img/w1.png" alt="work_pic7">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+<!----------comment section2------------------>
+<div class="container-fluid" id="comment_scetion" style="background-color: white;">
+	<div class="container text-center">
+		<div class="row">
+			<div class="offset-1"></div>
+			<div class="col-lg-10 col-md-10 col-sm-10 col-12">
+				<div class="media">
+					<img src="img/comm2_img.png" class="mr-3" alt="cmt_img" style="height: 150px;width: 150px;">
+					
+						<blockquote class="blockquote">
+							<p class="mb-0 text-left small"><q>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate</q> </p>
+							<footer class="blockquote-footer text-left "><cite title="Source Title"><b class="text-dark">Joshua Earle</b></cite></footer>
+						</blockquote>
+						
+						
+					
+				</div>
+			</div>
+			<div class="offset-1"></div>
+		</div>
+	</div>
+</div>
+
+<!----happy clients-------->
+<div class="container-fluid pb-5 mt-5" id="client_say_section">
+	
+<div class="device_container_heading">
+	<p class="text-center cursive-font">Happy Clients</p>
+	<p class="heading2">WHAT PEOPLE SAY</p>
+	<hr class="bg-danger w-25 m-auto">
+</div>
+
+<div class="container testimonials pt-5">
+	<div class="row">
+		<div class="col-lg-6 col-md-6 col-12" data-aos="fade-right">
+			<div class="media">
+				<img src="img/client1.png" class="mr-3" alt="img">
+				<div class="media-body">
+					<h6 class="mt-0 text-uppercase">Matthew Dix</h6>
+					<i class="text-muted">Graphic Design</i>
+					<hr class="bg-danger w-25">
+					<p class="font15 text-muted">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,Cras sit amet nibh libero, in gravida nulla.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-6 col-md-6 col-12" data-aos="fade-left">
+			<div class="media">
+				<img src="img/client2.png" class="mr-3" alt="img">
+				<div class="media-body">
+					<h6 class="mt-0 text-uppercase">Matthew Dix</h6>
+					<i class="text-muted">Graphic Design</i>
+					<hr class="bg-danger w-25">
+					<p class="font15 text-muted">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,Cras sit amet nibh libero, in gravida nulla.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row mt-5">
+		<div class="col-lg-6 col-md-6 col-12" data-aos="fade-right">
+			<div class="media">
+				<img src="img/client3.png" class="mr-3" alt="img">
+				<div class="media-body">
+					<h6 class="mt-0 text-uppercase">Matthew Dix</h6>
+					<i class="text-muted">Graphic Design</i>
+					<hr class="bg-danger w-25">
+					<p class="font15 text-muted">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,Cras sit amet nibh libero, in gravida nulla.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-6 col-md-6 col-12" data-aos="fade-left">
+			<div class="media">
+				<img src="img/client4.png" class="mr-3" alt="img">
+				<div class="media-body">
+					<h6 class="mt-0 text-uppercase">Matthew Dix</h6>
+					<i class="text-muted">Graphic Design</i>
+					<hr class="bg-danger w-25">
+					<p class="font15 text-muted">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,Cras sit amet nibh libero, in gravida nulla.</p>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+</div>
+
+</div>
+
+<!---------blog sections----------->
+<div class="container pt-5 pb-5" id="blog">
+	<p class="text-center cursive-font">Our Stories</p>
+	<p class="heading2">LATEST BLOG</p>
+	<hr class="bg-danger w-25 m-auto">
+
+	<div class="row mt-5">
+		<div class="col-lg-4 col-md-6 col-sm-6 p-5" data-aos="flip-up">
+			<div class="blogs_div">
+				<div class="blog_img">
+					<img src="img/blog1.png" class="card-img-top" alt="blog1">
+				</div>
+				<div class="card-body">
+					<h5 class="card-title text-uppercase">Card title</h5>
+					<p class="text-muted font15">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				</div>
+				<div class="card-footer text-muted bg-transparent">
+    				<i class="fa fa-eye sky_clr"></i><span> 554</span>
+    				<i class="fa fa-commenting sky_clr ml-3"></i><span> 17</span>
+  				</div>
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-6 col-sm-6 p-5" data-aos="flip-up">
+			<div class="blogs_div">
+				<div class="blog_img">
+					<img src="img/blog2.png" class="card-img-top" alt="blog2">
+				</div>
+				<div class="card-body">
+					<h5 class="card-title text-uppercase">Card title</h5>
+					<p class="text-muted font15">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				</div>
+				<div class="card-footer text-muted bg-transparent">
+    				<i class="fa fa-eye sky_clr"></i><span> 554</span>
+    				<i class="fa fa-commenting sky_clr ml-3"></i><span> 17</span>
+  				</div>
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-6 col-sm-6 p-5" data-aos="flip-up">
+			<div class="blogs_div">
+				<div class="blog_img">
+					<img src="img/blog3.png" class="card-img-top" alt="blog3">
+				</div>
+				<div class="card-body">
+					<h5 class="card-title text-uppercase">Card title</h5>
+					<p class="text-muted font15">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				</div>
+				<div class="card-footer text-muted bg-transparent">
+    				<i class="fa fa-eye sky_clr"></i><span> 554</span>
+    				<i class="fa fa-commenting sky_clr ml-3"></i><span> 17</span>
+  				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!----map section---->
+<div class="container-fluid mb-5" id="map">
+	<div class="map_area">
+	</div>
+</div>
+
+<!----footer-------------->
+<div class="container-fluid mt-3 mb-5" id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-5 col-md-12 mb-5">
+				<div class="footer_content">
+					<h3 class="text-muted font-weight-bold">MoGo</h3>
+					<p class="text-muted font15">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur.</p>
+				</div>
+				
+				<b>15k Followers</b>
+				<hr>
+				<div class="contact d-block">
+					<i class="text-muted">Follow Us:</i>
+					<i class="fa fa-facebook sky_clr m-2 fa-1x"></i>
+					<i class="fa fa-twitter sky_clr  m-1 fa-1x"></i>
+					<i class="fa fa-instagram sky_clr  m-1 fa-1x"></i>
+					<i class="fa fa-pinterest-p sky_clr  m-1 fa-1x"></i>
+					<i class="fa fa-google-plus sky_clr  m-1 fa-1x"></i>
+					<i class="fa fa-youtube-play sky_clr  m-1 fa-1x"></i>
+					<i class="fa fa-dribbble sky_clr  m-1 fa-1x"></i>
+					<i class="fa fa-tumblr sky_clr  m-1 fa-1x"></i>
+				</div>
+				<div class="input-group mt-4">
+					<input type="email" class="form-control" placeholder="Your E-mail">
+					<div class="input-group-append">
+						<button class="btn subscribe_btn" type="submit">SUBSCRIBE</button>
+					</div>
+				</div>
+
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<div class="footer_blog">
+					<p class="font-weight-bold">BLOGS</p>
+						<ul class="list-unstyled">
+							<li class="media">
+								<img src="img/footer_blog1.png" class="mr-3 align-self-end" alt="footer_img">
+								<div class="media-body ">
+									<p class="font15 text-uppercase font-weight-bold mb-0">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisqu.</p>
+									<i class="text-muted">Jan 9,2016</i>
+								</div>
+							</li>
+							<li class="media my-4">
+								<img src="img/footer_blog2.png" class="mr-3 align-self-end" alt="footer_img">
+								<div class="media-body ">
+									<p class="font15 text-uppercase font-weight-bold mb-0">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisqu.</p>
+									<i class="text-muted">Jan 9,2016</i>
+								</div>
+							</li>
+							<li class="media">
+								<img src="img/footer_blog3.png" class="mr-3 align-self-end" alt="footer_img">
+								<div class="media-body ">
+									<p class="font15 text-uppercase font-weight-bold mb-0">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisqu.</p>
+									<i class="text-muted">Jan 9,2016</i>
+								</div>
+							</li>
+						</ul>
+					</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-8">
+				<div class="footer_pics">
+					<p class="font-weight-bold">INSTAGRAM</p>
+					<div class="row no-gutters">
+						<div class="col-lg-4 col-md-4 col-sm-4 col-4 mb-1">
+							<div class="insta_pic">
+								<img src="img/insta1.png" alt="insta_img">
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-4 mb-1">
+							<div class="insta_pic">
+								<img src="img/insta2.png" alt="insta_img">
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-4 mb-1">
+							<div class="insta_pic">
+								<img src="img/insta3.png" alt="insta_img">
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-4 mb-1">
+							<div class="insta_pic">
+								<img src="img/insta4.png" alt="insta_img">
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-4 mb-1">
+							<div class="insta_pic">
+								<img src="img/insta5.png" alt="insta_img">
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-4 mb-1">
+							<div class="insta_pic">
+								<img src="img/insta6.png" alt="insta_img">
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-4 mb-1">
+							<div class="insta_pic">
+								<img src="img/insta1.png" alt="insta_img">
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-4 mb-1">
+							<div class="insta_pic">
+								<img src="img/insta2.png" alt="insta_img">
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-4 mb-1">
+							<div class="insta_pic">
+								<img src="img/insta3.png" alt="insta_img">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<p class="text-center small"><i class="fa fa-copyright"></i> 2020 MoGo Designed by <span class="pink_clr">ADITYA JANI</span></p>
+	</div>
+
+</div>
 
 
 
