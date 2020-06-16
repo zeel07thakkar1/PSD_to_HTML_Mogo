@@ -21,17 +21,6 @@ jQuery(document).ready(function($) {
 	  }
   });
 
-  
-
-
-
-  // $(document).mousemove(function(event) {
-  //    Act on the event 
-  //   console.log("position of y :"+ event.pageY);
-  // });
-
-
-
 
 //--------Counter JQ--------
  $('[data-toggle="counter-up"]').counterUp({
@@ -51,21 +40,15 @@ jQuery(document).ready(function($) {
 });
 
 //AOS animation------------------------------------------------------
-  AOS.init();
+   AOS.init({
+    duration: 1000,
+    easing: "ease-in-out-back"
+  });
 
 
-
-    // $(document).on("click mousemove","html",function(e){ 
-    // var x = e.clientX;
-    // var y = e.clientY;
-    // var newposX = x -15;
-    // var newposY = y - 15; 
-    // $(".circle").css("transform","translate3d("+newposX+"px,"+newposY+"px,0px)");
-    // });
-
+//------mouse movement--------
      let mouseName = $('.circle');
     $('html').mousemove(function (e) {
-        // mouseName.text(yourName);
         mouseName.show().offset({
             left: e.pageX - 50,
             top: e.pageY - 50
@@ -74,21 +57,32 @@ jQuery(document).ready(function($) {
 
 
     })
-});
 
 
-//   $(document).ready(function(){
+    //----------add active class on page load-------
+    var path=window.location.href;
+
+                $(".navbar .nav-link").each(function(){
+
+                    if (this.href == path) {
+                        var active=$(this).addClass('active');
+                        $('.navbar .nav-link').not(active).removeClass('active');
+                    }
+                });
+
+
+    //----------add active class on nav-link click-------
     
-//       var x = $(".header_menu").position();
-//       alert("Top position: " + x.top + " Left position: " + x.left);
-  
-// });
+                $(".navbar .nav-link").click(function(event) {
+                      var active=$(this).addClass('active');
+                        $('.navbar .nav-link').not(active).removeClass('active');
+                });
 
+});
+ 
 
 
 $(window).on("load", function(e) {
-    /* Act on the event */
-    // var ypos=(e.pageY);
 
     // console.log($(window).scrollTop());
     if($(window).scrollTop()>300)
@@ -97,4 +91,5 @@ $(window).on("load", function(e) {
     }
 
   });
+
 

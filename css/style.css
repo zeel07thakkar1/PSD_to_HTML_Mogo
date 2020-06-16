@@ -11,6 +11,7 @@ body
 	box-sizing: border-box;
 	position: relative;
 	height: auto;
+	overflow-x: hidden;
 }
 /* ----Designer Scrollbar--------- */
 body::-webkit-scrollbar
@@ -19,21 +20,12 @@ body::-webkit-scrollbar
 }
 body::-webkit-scrollbar-track
 {
-<<<<<<< HEAD
   background-color:  #95e1d3;
 }
 body::-webkit-scrollbar-thumb
 {
   background-color:#f38181;
   /* border-radius: 5px; */
-=======
-  background-color:  #e0e3e5;
-}
-body::-webkit-scrollbar-thumb
-{
-  background-color:#95e1d3;
-  border-radius: 5px;
->>>>>>> 61b1138851aaf8935064ec5351fdb1613a3c290b
   cursor: pointer;
  }
 /* cursor-----------*/
@@ -56,7 +48,7 @@ body::-webkit-scrollbar-thumb
   z-index: 10;
   transform:translate3d(-50%,-50%,0);
   transition:transform 2s cubic-bezier(.02,1.23,.79,1.08);
-  /* transition-delay: 2s; */
+  
 }
 
 
@@ -66,12 +58,14 @@ body::-webkit-scrollbar-thumb
  	background-image: linear-gradient(90deg, rgba(243,129,129,1) 0%, rgba(252,227,138,1) 100%);
 	
  }
-
+.header_menu
+{
+	width: 100%;
+}
 .cursive-font
 {
 	font-family: 'Lobster', cursive;
 	font-size: 24px;
-
 }
 .heading2
 {
@@ -88,15 +82,11 @@ body::-webkit-scrollbar-thumb
 {
 	color: #95e1d3;
 }
-<<<<<<< HEAD
 .pink_clr
 {
 	color: #f38181;
 }
-=======
->>>>>>> 61b1138851aaf8935064ec5351fdb1613a3c290b
 
- /* /---------------/ */
  .navbar
  {
  	z-index: 1;
@@ -118,15 +108,15 @@ body::-webkit-scrollbar-thumb
 }
 .nav-link:hover
 {
-	color: #c6303e  !important;
+	color: #c6303e !important;
 	border-bottom: 2px solid #c6303e;
 }
 
 .active
 {
-	/* color: #fce38a; */
-	color: #c6303e  !important;
+	color: #c6303e !important;
 	border-bottom: 2px solid #c6303e;
+	font-weight: bold;
 	
 }
 
@@ -411,7 +401,7 @@ body::-webkit-scrollbar-thumb
   cursor: pointer;
  }
  /* ------comment section----- */
- #comment_scetion
+ .comment_scetion
  {
 		
 	background-color: #f8f8f8;
@@ -618,7 +608,6 @@ body::-webkit-scrollbar-thumb
 	padding-top:50px;
 	font-size: xx-large;	
 }
-<<<<<<< HEAD
 
 /* ----footer----------- */
 .subscribe_btn
@@ -640,8 +629,6 @@ body::-webkit-scrollbar-thumb
 	object-fit: cover;
 	object-position: center;
 }
-=======
->>>>>>> 61b1138851aaf8935064ec5351fdb1613a3c290b
 /* .team_img:hover::before
 {
 
